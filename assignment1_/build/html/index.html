@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Assignement_2_2022’s documentation! &mdash; assignment_2_2022 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            assignment_2_2022
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to Assignement_2_2022’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a><ul>
+<li><a class="reference internal" href="#documentation-for-assignment-2-2022">Documentation for assignment_2_2022</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-scripts.control">Control Module</a><ul>
+<li><a class="reference internal" href="#scripts.control.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.control.update_current_robot_state"><code class="docutils literal notranslate"><span class="pre">update_current_robot_state()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-scripts.counter">Counter Module</a><ul>
+<li><a class="reference internal" href="#scripts.counter.info_callback"><code class="docutils literal notranslate"><span class="pre">info_callback()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.counter.result_callback"><code class="docutils literal notranslate"><span class="pre">result_callback()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-scripts.rob_info">rob.info Module</a><ul>
+<li><a class="reference internal" href="#scripts.rob_info.print_robot_info"><code class="docutils literal notranslate"><span class="pre">print_robot_info()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">assignment_2_2022</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to Assignement_2_2022’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-assignement-2-2022-s-documentation">
+<h1>Welcome to Assignement_2_2022’s documentation!<a class="headerlink" href="#welcome-to-assignement-2-2022-s-documentation" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p>:ref:<a href="#id1"><span class="problematic" id="id2">`</span></a>search</p></li>
+</ul>
+<section id="documentation-for-assignment-2-2022">
+<h2>Documentation for assignment_2_2022<a class="headerlink" href="#documentation-for-assignment-2-2022" title="Permalink to this heading"></a></h2>
+<p>The documentation provided here pertains to the assignment_2_2022 file, specifically the assignment_2_2022 module.</p>
+</section>
+</section>
+<section id="module-scripts.control">
+<span id="control-module"></span><h1>Control Module<a class="headerlink" href="#module-scripts.control" title="Permalink to this heading"></a></h1>
+<p>Module: assignment_2_2022
+Platform: Unix
+Synopsis: This is a ROS node designed to control a robot. It subscribes to the “/odom” topic to obtain information about the robot’s position and velocity, and publishes this data to the “/vel_pos” topicments an action client to prompt the user to enter a target position or cancel the current goal and sends the goal to the action server and waits for a response.
+Module author: GUELMAMI ABDELOUADOUD &lt;<a class="reference external" href="mailto:wadoud&#46;guelmami&#37;&#52;&#48;gmail&#46;com">wadoud<span>&#46;</span>guelmami<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;</p>
+<p>ROS node for controlling the robot. Subscribes to /odom and publishes to /posxy_velxy. Also implements an action client.</p>
+<dl class="simple">
+<dt>Subscribes to:</dt><dd><p>/odom</p>
+</dd>
+<dt>Publishes to:</dt><dd><p>/vel_pos</p>
+</dd>
+<dt>Clients:</dt><dd><p>/reaching_goal</p>
+</dd>
+</dl>
+<p>This module provides a ROS node for user input and controlling a robot.</p>
+<p>It subscribes to the ‘/odom’ topic to receive updates on the robot’s position and velocity using the ‘nav_msgs.msg.Odometry’ message type.
+It publishes the current state of the robot, including position and velocity, to the ‘/pos_vel’ topic using the ‘assignment_2_2022.msg.vel_pos’ message type.
+It interacts with the user to set a target position and control the robot’s movement using the ‘assignment_2_2022.msg.PlanningAction’ action server.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.control.main">
+<span class="sig-prename descclassname"><span class="pre">scripts.control.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/control.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.control.main" title="Permalink to this definition"></a></dt>
+<dd><p>Main function to control the robot based on user input.
+Sets up subscribers, publishers, and an action client for controlling the robot.
+Runs the action client.
+Prompts the user to enter a target position or cancel the current goal.
+Sends the goal to the action server and waits for a response.
+The program executes the action client, prompting the user to input a target position or cancel the ongoing goal.
+It then sends the goal to the action server and waits for a response.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.control.update_current_robot_state">
+<span class="sig-prename descclassname"><span class="pre">scripts.control.</span></span><span class="sig-name descname"><span class="pre">update_current_robot_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/control.html#update_current_robot_state"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.control.update_current_robot_state" title="Permalink to this definition"></a></dt>
+<dd><p>function for the publisher.</p>
+<p>it publisher the current cordination of x, y to and thier velocity to</p>
+<p>Args:
+msg: The ‘nav_msgs.msg.Odometry’ message containing the robot’s current position and velocity.</p>
+</dd></dl>
+
+</section>
+<section id="module-scripts.counter">
+<span id="counter-module"></span><h1>Counter Module<a class="headerlink" href="#module-scripts.counter" title="Permalink to this heading"></a></h1>
+<span class="target" id="module-assignment_2_2022"></span><dl class="field-list simple">
+<dt class="field-odd">platform<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Unix</p>
+</dd>
+<dt class="field-even">synopsis<span class="colon">:</span></dt>
+<dd class="field-even"><p>ROS service code to count goals reached and canceled.</p>
+</dd>
+</dl>
+<p>This module contains a ROS node for goal counting.
+It subscribes to the ‘/reaching_goal/result_callback’ topic to receive result messages from the ‘assignment_2_2022.msg.PlanningActionResult’ type.
+It also provides a service named ‘counter’ of type ‘count’ to retrieve the number of canceled and reached goals.</p>
+<p>The node keeps track of the number of canceled and reached goals and provides logging messages to indicate the counts.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.counter.info_callback">
+<span class="sig-prename descclassname"><span class="pre">scripts.counter.</span></span><span class="sig-name descname"><span class="pre">info_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">req</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/counter.html#info_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.counter.info_callback" title="Permalink to this definition"></a></dt>
+<dd><p>Callback function for the ‘counter’ service.</p>
+<p>Returns the current count of canceled and reached goals.</p>
+<p>Args:
+req: The request message.</p>
+<p>Returns:
+An instance of ‘goal_srvResponse’ containing the current count of canceled and reached goals.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.counter.result_callback">
+<span class="sig-prename descclassname"><span class="pre">scripts.counter.</span></span><span class="sig-name descname"><span class="pre">result_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/counter.html#result_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.counter.result_callback" title="Permalink to this definition"></a></dt>
+<dd><p>This class provides a ROS service to get the number of goals reached and cancelled.</p>
+<p>Args:
+msg (Pose):
+the turtlesim Pose</p>
+<p>Attributes:
+cancelled_goals (int): The number of goals that have been cancelled.
+reached_goals (int): The number of goals have been reached.
+srv (rospy.Service): The ROS service that will provide the data.
+sub_result (rospy.Subscriber): The ROS subscriber for the result topic.</p>
+</dd></dl>
+
+</section>
+<section id="module-scripts.rob_info">
+<span id="rob-info-module"></span><h1>rob.info Module<a class="headerlink" href="#module-scripts.rob_info" title="Permalink to this heading"></a></h1>
+<span class="target" id="module-exercise2"></span><p>ROS node to control our robot.</p>
+<dl class="simple">
+<dt>Subscribes to:</dt><dd><p>/pos_vel</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">param frequency_param<span class="colon">:</span></dt>
+<dd class="field-odd"><p>the frequency in Hz.</p>
+</dd>
+<dt class="field-even">type frequency_param<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param des_pos_x<span class="colon">:</span></dt>
+<dd class="field-odd"><p>represents the desired x position.</p>
+</dd>
+<dt class="field-even">type des_pos_x<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param des_pos_y<span class="colon">:</span></dt>
+<dd class="field-odd"><p>represents the desired y position.</p>
+</dd>
+<dt class="field-even">type des_pos_y<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+<p>This module provides a ROS node for printing robot information based on a given frequency.</p>
+<p>It subscribes to the ‘/pos_vel’ topic to receive updates on the robot’s position and velocity using the ‘assignment_2_2022.msg.vel_pos’ message type.
+It retrieves the target position and calculates the distance to the target and the average speed of the robot.
+It prints the robot information at a specified frequency.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.rob_info.print_robot_info">
+<span class="sig-prename descclassname"><span class="pre">scripts.rob_info.</span></span><span class="sig-name descname"><span class="pre">print_robot_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/rob_info.html#print_robot_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.rob_info.print_robot_info" title="Permalink to this definition"></a></dt>
+<dd><p>A function to print the distance and average.</p>
+<blockquote>
+<div><p>Args:</p>
+</div></blockquote>
+<p>msg: The ‘assignment_2_2022.msg.vel_pos’ message containing the robot’s current position and velocity.</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Guelmami Abdelouadoud.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
