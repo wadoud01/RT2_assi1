@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacerob__info" kind="namespace" language="Python">
+    <compoundname>rob_info</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacerob__info_1ae458b2165d6e74a8172bb2cda1448a74" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rob_info.previous_print_time</definition>
+        <argsstring></argsstring>
+        <name>previous_print_time</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/rob_info.py" line="27" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/rob_info.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerob__info_1acf72d490983519db6b709748f92b7391" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>rob_info.frequency_param</definition>
+        <argsstring></argsstring>
+        <name>frequency_param</name>
+        <initializer>=  1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/rob_info.py" line="68" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/rob_info.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerob__info_1abe16bd3763e10013e361e4cb555705ab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>rob_info.pos_vel_subscriber</definition>
+        <argsstring></argsstring>
+        <name>pos_vel_subscriber</name>
+        <initializer>=  rospy.Subscriber(&quot;/pos_vel&quot;, vel_pos, <ref refid="namespacerob__info_1a8f6abc0662ea0157b431814642d48fde" kindref="member">print_robot_info</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/rob_info.py" line="74" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/rob_info.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerob__info_1a0a6d79c11845857e7a94e0e3af62cf84" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>rob_info.rate</definition>
+        <argsstring></argsstring>
+        <name>rate</name>
+        <initializer>=  rospy.Rate(20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/rob_info.py" line="77" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/rob_info.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacerob__info_1a8f6abc0662ea0157b431814642d48fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def rob_info.print_robot_info</definition>
+        <argsstring>(msg)</argsstring>
+        <name>print_robot_info</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>    A function to print the distance and average.
+    
+    Args:
+        msg (vel_pos): the message containing the robot&apos;s position and velocity.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/rob_info.py" line="30" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/rob_info.py" bodystart="30" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module:: exercise2
+:platform: Unix
+:synopsis: Python module for controlling the robot.
+.. moduleauthor:: GUELMAMI ABDELOUADOUD
+
+ROS node to control our robot.
+
+Subscribes to:
+/pos_vel
+
+Parameters:
+frequency_param (float): the frequency in Hz.
+des_pos_x (float): represents the desired x position.
+des_pos_y (float): represents the desired y position.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/root/ros_ws/src/assignment_2_2022/scripts/rob_info.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecounter" kind="namespace" language="Python">
+    <compoundname>counter</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecounter_1ac1658ea272a31498e2f733f128beede1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int counter.cancelled_goals</definition>
+        <argsstring></argsstring>
+        <name>cancelled_goals</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" line="20" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecounter_1a65a0e7aa9bb8db9b41dc71e7e1c4589b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int counter.reached_goals</definition>
+        <argsstring></argsstring>
+        <name>reached_goals</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" line="21" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecounter_1a922703848427a3fef801865c0244f9fc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>counter.sub_result</definition>
+        <argsstring></argsstring>
+        <name>sub_result</name>
+        <initializer>=  rospy.Subscriber(&apos;/reaching_goal/<ref refid="namespacecounter_1a9ab796e692f9143fb6eaf1272d1a97ac" kindref="member">result_callback</ref>&apos;, assignment_2_2022.msg.PlanningActionResult, <ref refid="namespacecounter_1a9ab796e692f9143fb6eaf1272d1a97ac" kindref="member">result_callback</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" line="66" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecounter_1a4792c92223c7f2397bcca5d249226681" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>counter.srv</definition>
+        <argsstring></argsstring>
+        <name>srv</name>
+        <initializer>=  rospy.Service(&apos;counter&apos;, count, <ref refid="namespacecounter_1a121ffc382ff020c5ecd7984bb9ef2f53" kindref="member">info_callback</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" line="67" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecounter_1a9ab796e692f9143fb6eaf1272d1a97ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def counter.result_callback</definition>
+        <argsstring>(msg)</argsstring>
+        <name>result_callback</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This class provides a ROS service to get the number of goals reached and cancelled.
+Args:
+msg (Pose):
+the turtlesim Pose
+
+Attributes:
+    cancelled_goals (int): The number of goals that have been cancelled.
+    reached_goals (int): The number of goals have been reached.
+    srv (rospy.Service): The ROS service that will provide the data.
+    sub_result (rospy.Subscriber): The ROS subscriber for the result topic.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" line="23" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" bodystart="23" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecounter_1a121ffc382ff020c5ecd7984bb9ef2f53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def counter.info_callback</definition>
+        <argsstring>(req)</argsstring>
+        <name>info_callback</name>
+        <param>
+          <type>req</type>
+          <defname>req</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>    A callback function that prints the number of gloas reached and cancelled.
+    
+    Args:
+        req (goal_srv): The request message.
+
+    Returns:
+        goal_srvResponse: The response message.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" line="45" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" bodystart="45" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module:: assignment_2_2022
+
+   :platform: Unix
+   
+   :synopsis: ROS service code to count goals reached and canceled.
+
+.. moduleauthor:: GUELMAMI ABDELOUADOUD</verbatim> </para>
+    </detaileddescription>
+    <location file="/root/ros_ws/src/assignment_2_2022/scripts/counter.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

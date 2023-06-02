@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacecontrol" kind="namespace" language="Python">
+    <compoundname>control</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecontrol_1a43639ee585a596510f93db384e4e33c6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>control.rate</definition>
+        <argsstring></argsstring>
+        <name>rate</name>
+        <initializer>=  rospy.Rate(20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/control.py" line="99" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/control.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecontrol_1abec9a42a46b3e101103e4b4655f17c92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def control.update_current_robot_state</definition>
+        <argsstring>(msg)</argsstring>
+        <name>update_current_robot_state</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>function for the publisher.
+
+it publisher the current cordination of x, y to and thier velocity to 
+
+Returns:
+    None
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/control.py" line="38" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/control.py" bodystart="38" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecontrol_1acaba7e01da8389f5fb525fb2af9a4ffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def control.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs the action client.
+
+Prompts the user to enter a target position or cancel the current goal.
+
+Sends the goal to the action server and waits for a response.
+
+The program executes the action client, prompting the user to input a target position or cancel the ongoing goal. It then sends the goal to the action server and waits for a response.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/ros_ws/src/assignment_2_2022/scripts/control.py" line="58" column="1" bodyfile="/root/ros_ws/src/assignment_2_2022/scripts/control.py" bodystart="58" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Module: assignment_2_2022
+Platform: Unix
+Synopsis: This is a ROS node designed to control a robot. It subscribes to the &quot;/odom&quot; topic to obtain information about the robot&apos;s position and velocity, and publishes this data to the &quot;/vel_pos&quot; topicments an action client to prompt the user to enter a target position or cancel the current goal and sends the goal to the action server and waits for a response.
+Module author: GUELMAMI ABDELOUADOUD &lt;wadoud.guelmami@gmail.com&gt;
+
+ROS node for controlling the robot. Subscribes to /odom and publishes to /posxy_velxy. Also implements an action client.
+
+
+Subscribes to:
+/odom
+
+Publishes to:
+/vel_pos
+
+Clients:
+/reaching_goal
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/root/ros_ws/src/assignment_2_2022/scripts/control.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
