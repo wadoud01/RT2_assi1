@@ -1,0 +1,69 @@
+\hypertarget{namespacecounter}{}\doxysection{counter Namespace Reference}
+\label{namespacecounter}\index{counter@{counter}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacecounter_a9ab796e692f9143fb6eaf1272d1a97ac}{result\+\_\+callback}} (msg)
+\item 
+def \mbox{\hyperlink{namespacecounter_a121ffc382ff020c5ecd7984bb9ef2f53}{info\+\_\+callback}} (req)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacecounter_ac1658ea272a31498e2f733f128beede1}\label{namespacecounter_ac1658ea272a31498e2f733f128beede1}} 
+int {\bfseries cancelled\+\_\+goals} = 0
+\item 
+\mbox{\Hypertarget{namespacecounter_a65a0e7aa9bb8db9b41dc71e7e1c4589b}\label{namespacecounter_a65a0e7aa9bb8db9b41dc71e7e1c4589b}} 
+int {\bfseries reached\+\_\+goals} = 0
+\item 
+\mbox{\Hypertarget{namespacecounter_a922703848427a3fef801865c0244f9fc}\label{namespacecounter_a922703848427a3fef801865c0244f9fc}} 
+{\bfseries sub\+\_\+result} = rospy.\+Subscriber(\textquotesingle{}/reaching\+\_\+goal/\mbox{\hyperlink{namespacecounter_a9ab796e692f9143fb6eaf1272d1a97ac}{result\+\_\+callback}}\textquotesingle{}, assignment\+\_\+2\+\_\+2022.\+msg.\+Planning\+Action\+Result, \mbox{\hyperlink{namespacecounter_a9ab796e692f9143fb6eaf1272d1a97ac}{result\+\_\+callback}})
+\item 
+\mbox{\Hypertarget{namespacecounter_a4792c92223c7f2397bcca5d249226681}\label{namespacecounter_a4792c92223c7f2397bcca5d249226681}} 
+{\bfseries srv} = rospy.\+Service(\textquotesingle{}counter\textquotesingle{}, count, \mbox{\hyperlink{namespacecounter_a121ffc382ff020c5ecd7984bb9ef2f53}{info\+\_\+callback}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: assignment_2_2022
+
+   :platform: Unix
+   
+   :synopsis: ROS service code to count goals reached and canceled.
+
+.. moduleauthor:: GUELMAMI ABDELOUADOUD\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacecounter_a121ffc382ff020c5ecd7984bb9ef2f53}\label{namespacecounter_a121ffc382ff020c5ecd7984bb9ef2f53}} 
+\index{counter@{counter}!info\_callback@{info\_callback}}
+\index{info\_callback@{info\_callback}!counter@{counter}}
+\doxysubsubsection{\texorpdfstring{info\_callback()}{info\_callback()}}
+{\footnotesize\ttfamily def counter.\+info\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{req }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    A callback function that prints the number of gloas reached and cancelled.
+    
+    Args:
+        req (goal_srv): The request message.
+
+    Returns:
+        goal_srvResponse: The response message.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacecounter_a9ab796e692f9143fb6eaf1272d1a97ac}\label{namespacecounter_a9ab796e692f9143fb6eaf1272d1a97ac}} 
+\index{counter@{counter}!result\_callback@{result\_callback}}
+\index{result\_callback@{result\_callback}!counter@{counter}}
+\doxysubsubsection{\texorpdfstring{result\_callback()}{result\_callback()}}
+{\footnotesize\ttfamily def counter.\+result\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This class provides a ROS service to get the number of goals reached and cancelled.
+Args:
+msg (Pose):
+the turtlesim Pose
+
+Attributes:
+    cancelled_goals (int): The number of goals that have been cancelled.
+    reached_goals (int): The number of goals have been reached.
+    srv (rospy.Service): The ROS service that will provide the data.
+    sub_result (rospy.Subscriber): The ROS subscriber for the result topic.
+\end{DoxyVerb}
+ 

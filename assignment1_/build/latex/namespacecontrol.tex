@@ -1,0 +1,65 @@
+\hypertarget{namespacecontrol}{}\doxysection{control Namespace Reference}
+\label{namespacecontrol}\index{control@{control}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacecontrol_abec9a42a46b3e101103e4b4655f17c92}{update\+\_\+current\+\_\+robot\+\_\+state}} (msg)
+\item 
+def \mbox{\hyperlink{namespacecontrol_acaba7e01da8389f5fb525fb2af9a4ffd}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacecontrol_a43639ee585a596510f93db384e4e33c6}\label{namespacecontrol_a43639ee585a596510f93db384e4e33c6}} 
+{\bfseries rate} = rospy.\+Rate(20)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Module: assignment_2_2022
+Platform: Unix
+Synopsis: This is a ROS node designed to control a robot. It subscribes to the "/odom" topic to obtain information about the robot's position and velocity, and publishes this data to the "/vel_pos" topicments an action client to prompt the user to enter a target position or cancel the current goal and sends the goal to the action server and waits for a response.
+Module author: GUELMAMI ABDELOUADOUD <wadoud.guelmami@gmail.com>
+
+ROS node for controlling the robot. Subscribes to /odom and publishes to /posxy_velxy. Also implements an action client.
+
+
+Subscribes to:
+/odom
+
+Publishes to:
+/vel_pos
+
+Clients:
+/reaching_goal
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacecontrol_acaba7e01da8389f5fb525fb2af9a4ffd}\label{namespacecontrol_acaba7e01da8389f5fb525fb2af9a4ffd}} 
+\index{control@{control}!main@{main}}
+\index{main@{main}!control@{control}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def control.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs the action client.
+
+Prompts the user to enter a target position or cancel the current goal.
+
+Sends the goal to the action server and waits for a response.
+
+The program executes the action client, prompting the user to input a target position or cancel the ongoing goal. It then sends the goal to the action server and waits for a response.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacecontrol_abec9a42a46b3e101103e4b4655f17c92}\label{namespacecontrol_abec9a42a46b3e101103e4b4655f17c92}} 
+\index{control@{control}!update\_current\_robot\_state@{update\_current\_robot\_state}}
+\index{update\_current\_robot\_state@{update\_current\_robot\_state}!control@{control}}
+\doxysubsubsection{\texorpdfstring{update\_current\_robot\_state()}{update\_current\_robot\_state()}}
+{\footnotesize\ttfamily def control.\+update\+\_\+current\+\_\+robot\+\_\+state (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}function for the publisher.
+
+it publisher the current cordination of x, y to and thier velocity to 
+
+Returns:
+    None
+\end{DoxyVerb}
+ 
