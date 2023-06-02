@@ -26,44 +26,7 @@ To generate and view the documentation, follow these steps:
 - Navigate to the `docs/build` directory.
 - Open the `index.html` file in a web browser.
 
-## ROS Nodes
-
-### Node1
-
-Description: This node performs XYZ functionality.
-
-#### Usage
-
-To run Node1, use the following command:
-
-### Node2
-
-Description: This node handles ABC functionality.
-
-#### Usage
-
-To run Node2, use the following command:
-
-### Node3
-
-Description: This node controls DEF functionality.
-
-#### Usage
-
-To run Node3, use the following command:
-
-## Contributing
-
-Contributions to improve this documentation are welcome! If you find any issues or have suggestions for improvement, please feel free to submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-We would like to acknowledge the contributors and developers of the ROS community for their valuable resources and documentation that helped in the development of these nodes.
-
-## Contact
-
-For any inquiries or further information, please contact [a.guelmami@univ-boumerdes.dz](mailto:your-email@example.com).
+$(sudo) apt-get install python3-sphinx
+$ pip3 install breathe
+$ pip3 install sphinx-rtd-theme
+$ sphinx-quickstart
